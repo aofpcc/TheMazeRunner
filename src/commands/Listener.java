@@ -31,6 +31,8 @@ public class Listener {
             if(isEnd) return;
             System.out.print(getShell());
             String str = scan.nextLine();
+            str = str.trim();
+            if(str.equals("")) continue;
             String[] all = str.split("\\s+");
 
             
