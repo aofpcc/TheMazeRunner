@@ -36,7 +36,7 @@ public class Game {
         currentRoom = rooms[0][0];
         exitRoom = new Room("Exit!!!!!");
         
-        rooms[0][0].setExits(null, null, rooms[0][1], null);
+        rooms[0][0].setExits(null, null, rooms[1][0], null);
         rooms[0][1].setExits(null, rooms[0][2], rooms[1][1], null);
         rooms[0][2].setExits(null, rooms[0][3], null, rooms[0][1]);
         rooms[0][3].setExits(null, rooms[0][4], rooms[1][3], rooms[0][2]);
