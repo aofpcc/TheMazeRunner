@@ -19,7 +19,10 @@ public class Go extends AbstractCommand{
     }
     
     public void execute(List<String> args) {
-        if(args.size() == 0) System.out.println("Go Where?");
+        if(args.size() == 0) {
+            System.out.println("Go Where?");
+            return;
+        }
         String direction = args.get(0);
         game.Room room = listener.getGame().getCurrentRoom();
         game.Room nextRoom = room.get(direction);
